@@ -25,6 +25,10 @@ article#featured_items {
 	text-align: center;
 }
 
+.grid_item:hover {
+	background-color: rgba(151, 151, 151, 0.5);
+}
+
 .grid_item > p {
 	font: 1.2em Palatino, sans-serif;
 }
@@ -47,7 +51,7 @@ article#bio p {
 /* Navigation Styles */
 nav {
 	display: table;
-	width: 5%;
+	width: 150px;
 	background-color: rgba(5, 5, 5, 0.1);
 }
 
