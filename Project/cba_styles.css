@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: Satisfy;
+	src: url('Satisfy/Satisfy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Patua_One;
+	src: url('Patua_One/PatuaOne-Regular.ttf') format('truetype');
+}
+
+/* Structure Styles */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: radial-gradient(rgba(250, 250, 250, 0.7), rgba(250, 250, 250, 0.3));
+}
+
+header img {
+	width: 100%;
+}
+
+#header-image {
+	position: relative;
+	text-align: center;
+	color: white;
+}
+
+#header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font: 5em Satisfy, sans-serif;
+	text-shadow: gray 4px 4px 10px;
+}
+
+article {
+	color: rgb(5, 5, 5);
+	color: rgba(5, 5, 5, 0.6);
+	background-color: rgba(5, 5, 5, 0.1);
+	text-align: center;
+	width: 70%;
+	margin: 10px auto;
+	box-shadow: rgba(100, 100, 100, 0.6) 5px 5px 4px, inset white 5px 5px 4px;
+	border-radius: 5%;
+}
+
+div.row {
+	clear: both;
+}
+
+div.row::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+div[class^="col-"] {
+	float: left;
+	width: 50%;
+}
+
+.item {
+	width: 75%;
+	float: left;
+	margin: 10px auto;
+	box-shadow: rgba(5, 5, 5, 0.12) 0px 0px 10px;
+	border: 2px inset rgba(5, 5, 5, 0.12);
+	border-radius: 5%;
+	margin-top: 5%;
+	margin-left: 12.5%;
+}
+
+.item:last-of-type {
+	margin-bottom: 5%;
+}
+
+.item:hover {
+	background-color: rgba(5, 5, 5, 0.1);
+	box-shadow: rgba(100, 100, 100, 0.6) 0px 0px 4px 5px;
+}
+
+.item img {
+	max-width: 100%;
+	border: 1px solid rgba(5, 5, 5, 0.1);
+	border-radius: 5%/3.7%;
+}
+
+.item figcaption {
+	margin-bottom: 5px;
+}
+
+footer {
+	clear: both;
+	background-color: rgba(5, 5, 5, 0.1);
+}
+
+/*Text Styles*/
+nav ul li {
+	font: 1.2em Patua_One;
+}
+
+.item > p {
+	font: 1.2em Palatino, sans-serif;
+}
+
+article#bio h1 {
+	font: normal small-caps 1.5em 'Palatino Linotype', Palatino, sans-serif;
+}
+
+article#bio p {
+	font-size: 1.5em;
+}
+
+article#contact {
+	font: 1.5em Palatino, sans-serif;
+}
+
+article#featured_items a:link, article#featured_items a:visited, article#featured_items a:active, article#featured_items a:hover {
+	color: rgba(5, 5, 5, 0.6);
+	font: 1.2em Palatino, sans-serif;
+}
+
+img#shop_item {
+	width: 20%;
+	height: auto;
+}
+
+/* List Styles */
+ol.LO {
+	list-style-type: upper-alpha;
+}
+
+/* Link Style */
+
+a[href] {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: rgba(5, 5, 5, 0.5);
+}
+
+a:active, a:hover {
+	color: rgba(5, 5, 5, 0.8);
+	background-color: rgba(5, 5, 5, 0.2);
+}
+
+/* Navigation Styles */
+nav {
+	display: table;
+	width: 100%;
+	background-color: rgba(5, 5, 5, 0.1);
+}
+
+nav > ul {
+	list-style-type: none;
+	display: table-row;
+}
+
+nav > ul li {
+	display: table-cell;
+	float: left;
+	text-align: center;
+	width: 25%;
+}
+
+nav > ul li:hover {
+	display: table-cell;
+	float: left;
+	text-align: center;
+	width: 25%;
+	color: rgba(5, 5, 5, 0.8);
+	background-color: rgba(5, 5, 5, 0.2);
+}
