@@ -4,7 +4,8 @@
 	<head>
 		<!-- 
 		Name: Karsten Hald
-		Date: 4/6/2021
+		Date Started: 4/6/2021
+		Last Edited: 5/7/2021
 		Course: CIS155
 		Instructor: Linda Epps
 		Assignment: Basic Site for CIS 155
@@ -13,6 +14,7 @@
 		<meta name="keywords" content="shopping, handmade, Anni, gift" />
 		<meta name="author" content="Karsten Hald">
 		<title>Home</title>
+		<link href="cba_reset.css" rel="stylesheet" />
 		<link href="cba_styles.css" rel="stylesheet" />
 	</head>
 	
@@ -24,9 +26,10 @@
 					CreationsbyAnni
 				</div>
 			</div>
-			<nav>
+			<nav class="horizontal_nav">
 				<ul>
 					<a href="index.html"><li>Home</li></a>
+					<a href="cba_shop_home.html"><li>Shop</li></a>
 					<a href="cba_about.html"><li>About</li></a>
 					<a href="cba_contact.html"><li>Contact</li></a>
 					<a href="about.html"><li>Project</li></a>
@@ -35,8 +38,9 @@
 		</header>
 		
 		<article id="featured_items">
+			<h1>Featured Items</h1>
 			<div class="row">
-				<div class="col-1-1">
+				<div id="col-1-1">
 					<div class="item">
 						<a href="https://www.etsy.com/listing/837904718/crochet-jellyfish?ref=shop_home_recs_1">
 							<figure>
@@ -48,7 +52,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-1-2">
+				<div id="col-1-2">
 					<div class="item">
 						<h1>Item 2 picture</h1>
 						<p>Description</p>
@@ -56,13 +60,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2-1">
+				<div id="col-2-1">
 					<div class="item">
 						<h1>Item 3 picture</h1>
 						<p>Description</p>
 					</div>
 				</div>
-				<div class="col-2-2">
+				<div id="col-2-2">
 					<div class="item">
 						<h1>Item 4 picture</h1>
 						<p>Description</p>
@@ -70,13 +74,13 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-3-1">
+				<div id="col-3-1">
 					<div class="item">
 						<h1>Item 5 picture</h1>
 						<p>Description</p>
 					</div>
 				</div>
-				<div class="col-3-2">
+				<div id="col-3-2">
 					<div class="item">
 						<h1>Item 6 picture</h1>
 						<p>Description</p>
@@ -85,9 +89,34 @@
 			</div>
 		</article>
 		
-		<footer>
+		<a href="#top" id="to_top">&uarr;</a>
 		
-			<a href="#top">&bull; Back to Top &bull;</a>
+		<footer>
+			<hr>
+			<nav class="vertical_nav">
+				<h1>Products</h1>
+				<hr width="25%">
+				<ul>
+					<li><a href="#">Gifts</a></li>
+					<li><a href="#">Custom Order</a></li>
+					<li><a href="#">Specials</a></li>
+				</ul>
+			</nav>
+			<nav class="vertical_nav">
+				<h1>Shop</h1>
+				<hr width="25%">
+				<ul>
+					<li><a href="cba_about.html">About Me</a></li>
+					<li><a href="#">Social Media</a></li>
+					<li><a href="#">Reviews</a></li>
+				</ul>
+			</nav>
+			<section id="contact">
+				<h1>Questions? Contact me:</h1>
+				<hr width="25%">
+				<p>phone: phone number</p>
+				<p>email: email address</p>
+			</section>
 		</footer>
 	</body>
 </html>
