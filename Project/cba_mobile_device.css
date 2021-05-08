@@ -21,14 +21,20 @@ nav.horizontal_nav {
 }
 
 .collapsible_menu {
-	float: right;
 	display: block;
 	background-color: rgba(250, 250, 250, 0.3);
 	padding: 0px 30px;
 	border-bottom: 2px solid;
 }
 
+.collapsible_menu::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
 .collapsible_menu label {
+	float: right;
 	cursor: pointer;
 	font-size: 5em;
 }
@@ -46,6 +52,7 @@ input#menu:checked ~ .menu_content {
 }
 
 .menu_content {
+	float: right;
 	max-height: 0;
 	overflow: hidden;
 	font: 2em Patua_One;
